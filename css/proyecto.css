@@ -133,6 +133,7 @@ button:hover {
 
 
 #seccion1{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,9 +159,10 @@ button:hover {
     color: white;
 }
 #seccion1 button{
-    margin-left: 60px;
+    margin-left: 0px;
     cursor: pointer;
-    width: 70px;
+    width: auto;
+    padding: 10px 20px;
     height: 70px;
     border-radius: 100px;
     font-size: 1.8em;
