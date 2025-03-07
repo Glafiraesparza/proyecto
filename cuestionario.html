@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario</title>
+    <link  rel="stylesheet" type="text/css" href="css/conservacion.css">
+  
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="img/icono.png" alt="Logo Vida Marina">
+        </div>
+        <nav>
+           <ul class="nav-links">
+                <li><a href="proyecto.html">Página principal</a></li>
+           </ul>            
+        </nav>
+    </header>
+
+  <section id="seccion3">
+    <div class="containter">
+        <div class="img-container">
+            <div class="texto">
+                <h3>Cuestionario sobre Conservación y Cuidado del Mar</h3>
+                <br><br>
+
+                <form action="#" method="POST">
+                    <!-- Nombre del participante -->
+                    <label for="nombre">¿Cuál es tu nombre?</label>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+            
+                    <!-- Edad del participante -->
+                    <label for="edad">¿Cuál es tu edad?</label>
+                    <input type="number" id="edad" name="edad" min="0" required><br><br>
+            
+                    <!-- Pregunta de opción múltiple sobre la importancia de los océanos -->
+                    <label for="importancia">¿Por qué crees que es importante conservar los océanos?</label><br>
+                    <input type="radio" id="importancia1" name="importancia" value="Fuente de vida">
+                    <label for="importancia1">Fuente de vida para muchas especies</label><br>
+                    <input type="radio" id="importancia2" name="importancia" value="Regula el clima">
+                    <label for="importancia2">Ayuda a regular el clima global</label><br>
+                    <input type="radio" id="importancia3" name="importancia" value="Recursos naturales">
+                    <label for="importancia3">Provee recursos naturales como alimentos y minerales</label><br><br>
+            
+                    <!-- Casillas de verificación sobre hábitos responsables -->
+                    <label for="habitos">¿Qué prácticas llevas a cabo para cuidar el mar? (Puedes seleccionar más de una opción)</label><br>
+                    <input type="checkbox" id="reducirPlastico" name="habitos" value="Reducir plásticos">
+                    <label for="reducirPlastico">Reducir el uso de plásticos</label><br>
+                    <input type="checkbox" id="limpiezaPlayas" name="habitos" value="Participar en limpieza de playas">
+                    <label for="limpiezaPlayas">Participar en actividades de limpieza de playas</label><br>
+                    <input type="checkbox" id="reciclaje" name="habitos" value="Reciclar residuos">
+                    <label for="reciclaje">Reciclar residuos correctamente</label><br><br>
+            
+                    <!-- Comentarios sobre la conservación -->
+                    <label for="comentarios">¿Tienes algún comentario sobre cómo mejorar la conservación de los océanos?</label><br>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+            
+                    <!-- Botón de envío -->
+                    <input type="submit" value="Enviar Respuestas">
+                </form>
+            
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+  </section>
+  
+
+</body>
+</html>
