@@ -283,7 +283,7 @@ button:hover {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 100vh;
+    height: 105svh;
     color: white;
     background-image: linear-gradient(
         0deg,
