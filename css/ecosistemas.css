@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-size: 1.7rem;
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+h3 {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1.25em;
+    line-height: 1.6; /* Mejora la legibilidad y evita el empalme */
+}
+
+
+li {
+    font-size: 1em;
+    margin-bottom: 10px; /* Espaciado entre elementos de lista */
+}
+
+
+
+button {
+    margin-top: 40px;
+    font-size: 20px;
+    background-color: transparent;
+    font-weight: 500;
+    padding: 9px 20px;
+    line-height: 1.5;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 252, 252);
+    color: #f9f9f9;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.ecosistemas {
+    margin-top: 100px;
+    font-size: 4.5rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 0.5%;
+    border-radius: 50px;
+}
+
+.ecosistemas:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.header {
+    background: rgba(0, 0, 0, 0.3); /* Fondo oscuro con transparencia */
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center; /* Centra los elementos */
+    align-items: center;
+    height: 60px;
+    position: fixed;
+    width: auto;
+    top: 20px;
+    left: 5%;
+    transform: translateX(0);
+    z-index: 1000;
+    border-radius: 50px; /* Bordes redondeados */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Sombra ligera */
+}
+
+.header .logo {
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+.header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espacio entre elementos */
+    padding: 0;
+    margin: 0;
+}
+
+.header .nav-links li {
+    display: inline-block;
+}
+
+.header .nav-links a {
+    font-weight: 400;
+    color:white;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 10px;
+    display: inline-block; /* Asegura que scale funcione */
+    transition: transform 0.3s ease-in-out; /* Suaviza la animación */
+}
+
+.header .nav-links li a:hover {
+    transform: scale(1.2);
+}
+
+.header .btn button {
+    font-size: 1em;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;  
+}
+
+.header .btn button:hover {
+    background-color: #e2f1f8;
+    transform: scale(1.1);
+}
+
+
+
+#seccion1 .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+#seccion1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.1),  
+        rgba(0,0,0,0.1)  
+    )
+    ,url("../img/arrecifefondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+#seccion1 .texto{
+    width: 50%;
+    font-weight: 200;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    max-width: 600px;
+    height: 500px;
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#seccion1 .texto:hover{
+    transform: scale(1.1); 
+    transition: transform 0.3s ease-in-out;
+}
+#seccion1 h2{
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+#seccion1 .img-container{
+    margin-right: 100px;
+    background-image: url("../img/arrecifefoto.jpg");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 30px;
+    height: 500px;
+    width: 500px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#seccion1 .img-container:hover{
+    transform: scale(1.1); 
+    transition: transform 0.3s ease-in-out;
+}
+
+
+#seccion2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.1),  
+        rgba(0,0,0,0.1)  
+    )
+    ,url("../img/manglarfondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#seccion1 .container{
+    margin-top: 50px;
+    margin-bottom: 180px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+#seccion2 .container-reverse {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse; /* Invierte la disposición */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
+}
+
+#seccion2 .texto2 {
+    width: 50%;
+    font-weight: 200;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    max-width: 600px;
+    padding: 50px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    word-wrap: break-word; /* Evita el desbordamiento de texto largo */
+}
+
+#seccion2 .img-container2 {
+    margin-left: 50px;
+    background-image: url("../img/manglarfauna.jpg");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 30px;
+    height: 400px;
+    width: 500px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#seccion3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.1),  
+        rgba(0,0,0,0.1)  
+    )
+    ,url("../img/aubi.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#seccion3 .container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px; /* Añadir espacio entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
+}
+
+#seccion3 .texto {
+    margin: 10%;
+    width: auto;
+    font-weight: 200;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 50px 60px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    word-wrap: break-word; /* Evita el desbordamiento de texto largo */
+}

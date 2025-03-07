@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+a:visited {
+    text-decoration: none !important;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+h2{ font-size: 1.7rem;}
+h3{ font-size: 1.3em; font-weight: 500;}
+p{ font-size: 1.25em;}
+li {font-size: 1.25em;}
+
+ul {
+    list-style: disc;  
+    padding-left: 20px; 
+}
+
+button{
+    margin-top: 40px;
+    font-size: 20px;
+    background-color: transparent;
+    font-weight: 500;
+    padding: 9px 20px;
+    line-height: 1.5;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 252, 252);
+    color:#f9f9f9;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+button:hover {
+    color: rgb(255, 255, 255); 
+    transform: scale(1.1); 
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+
+}
+
+.header {
+    background: rgba(0, 0, 0, 0.3); /* Fondo oscuro con transparencia */
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center; /* Centra los elementos */
+    align-items: center;
+    height: 60px;
+    position: fixed;
+    width: auto;
+    top: 20px;
+    left: 5%;
+    transform: translateX(0);
+    z-index: 1000;
+    border-radius: 50px; /* Bordes redondeados */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Sombra ligera */
+}
+
+.header .logo {
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+.header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espacio entre elementos */
+    padding: 0;
+    margin: 0;
+}
+
+.header .nav-links li {
+    display: inline-block;
+}
+
+.header .nav-links a {
+    font-weight: 400;
+    color:white;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 10px;
+    display: inline-block; /* Asegura que scale funcione */
+    transition: transform 0.3s ease-in-out; /* Suaviza la animación */
+}
+
+.header .nav-links li a:hover {
+    transform: scale(1.2);
+}
+
+.header .btn button {
+    font-size: 1em;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;  
+}
+
+.header .btn button:hover {
+    background-color: #e2f1f8;
+    transform: scale(1.1);
+}
+
+
+#seccion1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.1),  
+        rgba(0,0,0,0.1)  
+    )
+    ,url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+#seccion1 h1{
+    font-size: 60px;
+    font-weight:500;
+    color: white;
+}
+#seccion1 button{
+    margin-left: 60px;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+#seccion1 .texto{
+    font-weight: 100;
+}
+
+/* Nuevo estilo para el enlace "Descubre más" con flecha */
+.discover-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.discover-text {
+    font-size: 1.8em;
+    color: white;
+    margin-right: -30px;
+    font-weight: 400;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Modificamos el estilo del botón flecha para alinearlo con el texto */
+#flecha {
+    margin-top: 0;
+    margin-left: 0;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    font-size: 1.4em;
+    font-weight: 500;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#seccion2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        min-height: 100vh;
+        color: white;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.1),  
+            rgba(0,0,0,0.1)  
+        )
+        ,url("../img/fondo2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+
+#seccion2 button{
+    margin-top: 300px;
+    margin-left: 60px;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    font-size: 1.8em;
+    font-weight: 500; 
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+#seccion2 .container{
+    text-align: center;
+    padding-top: 150px;
+}
+
+
+#seccion2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.1),  
+        rgba(0,0,0,0.1)  
+    )
+    ,url("../img/fondo2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#seccion1 .container{
+    margin-top: 50px;
+    margin-bottom: 180px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+#ecosistemas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.1),  
+        rgba(0,0,0,0.1)  
+    )
+    ,url("../img/fondoeco.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#ecosistemas .container-reverse {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse; /* Invierte la disposición */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
+}
+
+#ecosistemas .texto2 {
+    width: 50%;
+    font-weight: 200;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    max-width: 600px;
+    padding: 50px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    word-wrap: break-word; /* Evita el desbordamiento de texto largo */
+}
+
+#ecosistemas .img-container2 {
+    margin-left: 50px;
+    background-image: url("../img/arrecife.jpg");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 30px;
+    height: 400px;
+    width: 500px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#ecosistemas .discover-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+#ecosistemas .discover-text {
+    font-size: 1.8em;
+    color: white;
+    margin-right: 10px;
+    font-weight: 400;
+    transition: transform 0.3s ease-in-out;
+}
+
+#ecosistemas .discover-link:visited {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+/* Modificamos el estilo del botón flecha para alinearlo con el texto */
+#ecosistemas #flecha {
+    margin-top: 60px;
+    margin-bottom: 150px;
+    margin-left: 0;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    font-size: 1.4em;
+    font-weight: 500;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fauna .container{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#fauna{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.1),  
+        rgba(0,0,0,0.1)  
+    )
+    ,url("../img/faunafondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+#fauna .texto{
+    width: 50%;
+    font-weight: 200;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    max-width: 600px;
+    height: 500px;
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#fauna .texto:hover{
+    transform: scale(1.1); 
+    transition: transform 0.3s ease-in-out;
+}
+#fauna h2{
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+#fauna .img-container{
+    margin-right: 100px;
+    background-image: url("../img/fauna.jpg");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 30px;
+    height: 500px;
+    width: 500px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#fauna .img-container:hover{
+    transform: scale(1.1); 
+    transition: transform 0.3s ease-in-out;
+}
+
+
+#fauna .discover-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+#fauna .discover-text {
+    font-size: 1.8em;
+    color: white;
+    margin-right: 10px;
+    font-weight: 400;
+    transition: transform 0.3s ease-in-out;
+}
+
+#fauna .discover-link:visited {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+/* Modificamos el estilo del botón flecha para alinearlo con el texto */
+#fauna #flecha {
+    margin-top: 60px;
+    margin-bottom: 150px;
+    margin-left: 0;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    font-size: 1.4em;
+    font-weight: 500;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#seccion3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.1),  
+        rgba(0,0,0,0.1)  
+    )
+    ,url("../img/fondo3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#seccion3{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#seccion3 .container{
+    padding: 150px 12px;
+}
+
+#seccion3 h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#seccion3 p{
+    display: none;
+}
+
+#seccion3 .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),  
+        rgba(0,0,0,0.5)  
+    )
+    ,url("../img/fauna-marina-tortuga.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),  
+        rgba(0,0,0,0.5)  
+    )
+    ,url("../img/peces4.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),  
+        rgba(0,0,0,0.5)  
+    )
+    ,url("../img/faunaa.jpg");
+}
+
+#footer{
+    background-color: white;
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+    
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #seccion1 .container{
+        display:flex;
+
+        justify-content: space-evenly;
+    }
+
+    #seccion1 .texto{
+        font-weight: 100;
+        width: 100%;
+        font-size: 15px;
+        max-width: 6000px;
+        padding-left: 100px;
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+    #seccion1 .parrafo{
+        padding-top: 60px;
+        width: 50%;  
+        padding-bottom: 60px;
+    }
+
+
+    #seccion2 .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+    #seccion2 .texto{
+        width: 50%;
+        font-weight: 200;
+        text-align: justify;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 30px;
+        max-width: 600px;
+        height: 500px;
+        padding: 20px 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    #seccion2 .texto:hover{
+        transform: scale(1.1); 
+        transition: transform 0.3s ease-in-out;
+    }
+    #seccion2 h2{
+        margin-top: 5px;
+        margin-bottom: 40px;
+    }
+
+    #seccion2 .img-container{
+        margin-right: 100px;
+        background-image: url("../img/tortuga2.jpg");
+        background-size: cover;
+        background-position: center center;
+        border-radius: 30px;
+        height: 500px;
+        width: 500px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    #seccion2 .img-container:hover{
+        transform: scale(1.1); 
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* Nuevo estilo para el enlace "Descubre más" con flecha */
+    #seccion2 .discover-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    #seccion2 .discover-text {
+        font-size: 1.8em;
+        color: white;
+        margin-right: 10px;
+        font-weight: 400;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* Modificamos el estilo del botón flecha para alinearlo con el texto */
+    #seccion2 #flecha {
+        margin-top: 60px;
+        margin-bottom: 150px;
+        margin-left: 0;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        font-size: 1.4em;
+        font-weight: 500;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../img/peces4.jpg");
+
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../img/peces4.jpg");
+    }
+
+    .carta:nth-of-type(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../img/tortuga2.jpg");
+
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
+
+
