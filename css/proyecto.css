@@ -183,7 +183,8 @@ button:hover {
 .discover-text {
     font-size: 1.8em;
     color: white;
-    margin-left: 20px;
+    margin-left: 0px;
+    margin-right: 10px;
     font-weight: 400;
     transition: transform 0.3s ease-in-out;
 }
